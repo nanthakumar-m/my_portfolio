@@ -54,7 +54,7 @@ section nav ul li a:hover {
 }
 
 section .main {
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 0%;
   display: flex;
   align-items: center;
@@ -555,4 +555,241 @@ li::marker {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   Media Queries for All Sections
+   ======================= */
+
+/* For devices up to 1200px */
+@media (max-width: 1200px) {
+  /* Project Section */
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-description {
+    padding-left: 30px;
+  }
+
+  /* Skills Board */
+  .skills .skills-board {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+  }
+
+  .skills .skills-board .skills-card {
+    margin: 10px;
+  }
+}
+
+/* For devices up to 992px */
+@media (max-width: 992px) {
+  /* Navbar */
+  section nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  section nav ul li {
+    padding: 10px;
+  }
+
+  /* Main Section */
+  section .main {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  section .main .text .tag {
+    width: 90%;
+    margin: auto;
+  }
+
+  section .main .image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* About Section */
+  .about .about-tag {
+    width: 90%;
+  }
+
+  .about .about-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/* For devices up to 768px */
+@media (max-width: 768px) {
+  /* Skills Board */
+  .skills .skills-board {
+    width: 90%;
+    padding: 20px;
+  }
+
+  /* Academics Section */
+  .academics-content {
+    padding: 0 20px;
+  }
+
+  .academics-content .my-description {
+    padding-right: 20px;
+  }
+
+  .academics-content::before {
+    left: 0;
+  }
+
+  /* Form Section */
+  .submit-form form {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .submit-form textarea {
+    width: 90%;
+    left: 0;
+  }
+
+  .submit-form .form-btn {
+    right: 0;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* For devices up to 480px */
+@media (max-width: 480px) {
+  /* Font Sizes */
+  .about h1,
+  .skills h1,
+  .academics-section h1,
+  .projects-section h1,
+  .submit-form h1 {
+    font-size: 30px;
+  }
+
+  section .main .text h1 {
+    font-size: 36px;
+  }
+
+  /* Logo */
+  section nav .logo {
+    font-size: 24px;
+  }
+
+  /* Image size */
+  section .main .image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* About Boxes */
+  .about .about-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about .about-card .about-box {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/*  Responsive - Academics Tab Container */
+
+/* Tablets and smaller (≤ 768px) */
+@media (max-width: 768px) {
+  .academics-tab-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .academics-tab-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    padding: 0.4rem 1.5rem;
+  }
+}
+
+/* 📚 Responsive - Academics Section Wrapper */
+
+/* Tablets and smaller (≤ 768px) */
+@media (max-width: 768px) {
+  .academics-section {
+    height: auto; /* Let content decide height */
+    padding: 40px 20px 30px 20px;
+  }
+
+  .academics {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .experience {
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+
+  .academics-tab-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .academics-section h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .academics-tab-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academics {
+    margin-top: 1rem;
+    padding: 0 10px;
+  }
+
+  .experience {
+    padding: 10px;
+  }
+
+  .academics-content {
+    padding: 0 10px;
+  }
+
+  .academics-content .my-description {
+    padding-right: 0;
+  }
+
+  .academics-content::before {
+    display: none; /* Hide green circle on small screens */
+  }
 }
