@@ -269,30 +269,46 @@ section .main .image img {
   color: #919191;
 }
 
-.submit-form textarea {
-  width: 62%;
+.submit-form form input {
+  margin: 20px;
+  padding: 10px 6px;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #919191;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: #919191;
+}
+
+textarea {
+  width: 95%;
   height: 70px;
   padding: 8px 10px;
   position: relative;
-  left: 19%;
-  right: 19px;
   transform: translate(-50, 0);
+  margin: 10px auto;
   background: none;
   border: 1px solid #919191;
   color: #919191;
   outline: none;
+  grid-column: span 2;
 }
 
-.submit-form .form-btn {
+.submit-form form button {
+  width: 200px;
   background: #27af5d;
   padding: 20px;
   color: #fff;
   font-size: 17px;
   text-decoration: none;
-  position: relative;
   top: 60px;
   right: 230px;
   bottom: 60px;
+  grid-column: span 2;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .submit-form .form-btn:hover {
