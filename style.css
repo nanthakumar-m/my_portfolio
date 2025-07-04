@@ -386,7 +386,7 @@ textarea {
 .academics-content {
   display: none;
   position: relative;
-  padding: 0 0 20px 120px;
+  padding: 0 0 30px 120px;
   background: #222222;
   border-radius: 10px;
 
@@ -464,7 +464,8 @@ textarea {
 
 /* =====PROJECT SECTION=====*/
 .projects-section {
-  padding-top: 40px;
+  margin-top: 50px;
+  padding-top: 70px;
   max-width: 100rem;
   background-color: #171717;
   height: auto;
