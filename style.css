@@ -464,10 +464,10 @@ textarea {
 
 /* =====PROJECT SECTION=====*/
 .projects-section {
-  margin-top: 50px;
+  margin-top: 51px;
   padding-top: 70px;
   max-width: 100rem;
-  background-color: red;
+  background-color: #171717;
   height: auto;
 }
 
