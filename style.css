@@ -573,6 +573,16 @@ li::marker {
   margin-bottom: 20px;
 }
 
+.bolded-text {
+  font-weight: bold;
+  color: lavender;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background: #222222;
+}
+
 /* =======================
    RESPONSIVE DESIGN
    Media Queries for All Sections
